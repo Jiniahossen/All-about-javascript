@@ -94,3 +94,15 @@ const outerReturn=Outer(20);
 console.log(outerReturn(5));
 
 
+//callback function
+
+function getMoney(money){
+    money();
+}
+
+getMoney(function(){
+    console.log('Here is your money!');
+})
+
+
+
