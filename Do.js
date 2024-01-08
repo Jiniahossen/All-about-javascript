@@ -73,3 +73,9 @@ let age = 25;
 let age2=age;
 age2=4;
 console.log(age);
+//Write a JavaScript program to find the area of a triangle where three sides are 5, 6, 7.  
+
+function triangleArea(a,b,c){
+    return area=(a+b+c)/2;
+}
+console.log('Triangle Area:', triangleArea(5,6,7));
