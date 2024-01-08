@@ -113,3 +113,12 @@ if (isPossible(x, y, z)) {
 } else {
     console.log(`It is not possible to replace $ with +, -, *, or / to obtain ${x} $ ${y} = ${z}.`);
 }
+
+var plusOne = function(digits) {
+    for(var i = digits.length - 1; i >= 0; i--){
+      if(++digits[i] > 9) digits[i] = 0;
+      else return digits;
+    }
+    digits.unshift(1);
+    return digits;
+  };
