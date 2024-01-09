@@ -26,3 +26,19 @@ const originalArray = [1, 2, 3, 4, 5];
 const reversedArray = reverseArray(originalArray);
 console.log(reversedArray); // Output: [5, 4, 3, 2, 1]
 console.log(originalArray); // Output: [1, 2, 3, 4, 5] (original array remains unchanged)
+
+// Function to filter even numbers from an array
+function filterEvenNumbers(inputArray) {
+    return inputArray.filter(number => number % 2 === 0);
+  }
+  
+  // Test cases
+  const array1 = [1, 2, 3, 4, 5, 6];
+  console.log(filterEvenNumbers(array1)); // Output: [2, 4, 6]
+  
+  const array2 = [7, 8, 9, 10, 11];
+  console.log(filterEvenNumbers(array2)); // Output: [8, 10]
+  
+  const array3 = [];
+  console.log(filterEvenNumbers(array3)); // Output: [] (Empty array, no even numbers)
+  
