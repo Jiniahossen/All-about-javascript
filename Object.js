@@ -174,3 +174,8 @@ function isWithinRange(number) {
   // Check if the number is within 20 of 100 or 400
   return Math.abs(100 - number) <= 20 || Math.abs(400 - number) <= 20;
 }
+
+let lang='hello';
+
+const ret= lang && 'Javascript';
+console.log(ret);
