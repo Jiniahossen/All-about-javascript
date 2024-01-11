@@ -9,3 +9,22 @@ function capitalizedWord(str){
 }
 
 console.log(capitalizedWord('jinia is a beautiful girl'));
+
+
+// alphabet occurances value
+function occ(str) {
+  var occur = {};
+  for (var i = 0; i < str.length; i++) {
+    var char = str.charAt(i);
+    if (!occur.hasOwnProperty(char)) {
+      occur[char] = 1;
+    } else {
+      occur[char]++;
+    }
+  }
+
+  return occur;
+}
+
+console.log(occ('Jinia'));
+
