@@ -28,3 +28,12 @@ function occ(str) {
 
 console.log(occ('Jinia'));
 
+function sumArray(arr) {
+  return arr.reduce(function (acc, currentValue) {
+    return acc + currentValue;
+  }, 0);
+}
+
+var myArray = [1, 2, 3, 4, 5];
+console.log(sumArray(myArray)); // Output: 15
+
